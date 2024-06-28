@@ -12,7 +12,20 @@
         "operationId": "Post.",
         "requestBody": {
           "content": {
-            "application/x-www-form-urlencoded": { }
+            "application/json": {
+              "schema": {
+                  "type": "object",
+                  "properties": {
+                    "name": {
+                      "type": "string"
+                    },
+                    "greeting": {
+                      "type": "string"
+                    }
+                  }
+                }
+
+            }
           }
         },
         "responses": {
